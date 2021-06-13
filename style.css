@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*chieu cao toi thieu cua the body, vh la view-height chiem % goc nhin man hinh*/
+  background: linear-gradient(to left, #ffa17f, #00223e);
+}
+#dongho h2{
+    position: relative;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+#dongho #thoigian{
+    display: flex;
+}
+#dongho #thoigian div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
+}
+#dongho #thoigian div span{
+    position: relative;
+    width: 230px;
+    height: 175px;
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    z-index: 3;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+/* lấy thẻ span con: giờ-phút-giây */
+#dongho #thoigian div span:nth-child(2){
+    height: 65px;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    z-index: 2;
+    box-shadow: none;
+    background-color: #127fd6;
+    text-transform: uppercase;
+}
+/* lấy thẻ span con: giây , đổi màu nền*/
+#dongho #thoigian div:last-child span:nth-child(2){
+    background: #ec0062;
+}
+#dongho #thoigian div:last-child span{
+    background: #ff006a;
+}
